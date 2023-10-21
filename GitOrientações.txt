@@ -2,4 +2,10 @@ Baixa Git / GitBash:
   https://git-scm.com/downloads
 
 Comandos Git:
+============
+
+1) - Como Configurar GIT na Computador local:
+    git config --global user.name "Seu Nome"
+    git config --global user.email "Seu e-Mail de cadastro no Github"
+    git config --list
   
