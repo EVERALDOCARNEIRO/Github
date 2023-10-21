@@ -7,7 +7,7 @@ Video Aulas Treinamento:
 Comandos Git:
 ============
 
-1) - Como Configurar GIT na Computador local:
+1) - Como Configurar GIT no Computador local:
     git config --global user.name "Seu Nome"
     git config --global user.email "Seu e-Mail de cadastro no Github"
     git config --list
@@ -16,4 +16,11 @@ Comandos Git:
     ssh-keygen -t ed25519 -C "your_email@example.com"
   * Após gerar a chave cadastrar no Github.
 
-3) - 
+3) - Criando uma Pasta Controlada pelo Git:
+    3.1) - Abrir um Gitbash da pasta a ser controlada.
+      git init .      // Inicia a sessão
+      git add .      //  Adicionar a pasta ao controle
+      git commit -m "Mensagem explicativa"  // Comita a paste e insere um histórico
+      git branch -M main
+      git remote add origin git@github.com:[NomeUsuario]/[SeuRepositorio].git
+      git push -u origin main
