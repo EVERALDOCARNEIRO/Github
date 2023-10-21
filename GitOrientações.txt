@@ -1,6 +1,9 @@
 Baixa Git / GitBash:
   https://git-scm.com/downloads
 
+Video Aulas Treinamento:
+  ssh-keygen -t ed25519 -C "your_email@example.com"
+
 Comandos Git:
 ============
 
@@ -8,4 +11,9 @@ Comandos Git:
     git config --global user.name "Seu Nome"
     git config --global user.email "Seu e-Mail de cadastro no Github"
     git config --list
-  
+
+2) - Gerar chave ssl Gitbuh:
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+  * Após gerar a chave cadastrar no Github.
+
+3) - 
