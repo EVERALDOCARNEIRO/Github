@@ -19,8 +19,13 @@ Comandos Git:
 3) - Criando uma Pasta Controlada pelo Git:
     3.1) - Abrir um Gitbash da pasta a ser controlada.
       git init .      // Inicia a sessão
-      git add .      //  Adicionar a pasta ao controle
-      git commit -m "Mensagem explicativa"  // Comita a paste e insere um histórico
+      git add .       //  Guarde uma versão numa pasta temporária do controle
+      git status      //  Mostra as alterações pendentes a serem gravadas no Github 
+      git commit -m "Mensagem explicativa"  // Grava as alterações no Github e Insere um histórico explicativo
       git branch -M main
       git remote add origin git@github.com:[NomeUsuario]/[SeuRepositorio].git
       git push -u origin main
+
+4) - Baixando uma Pasta do Controle de Origem para máquina local
+      git clone [link do Github]
+
