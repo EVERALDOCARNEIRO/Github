@@ -29,3 +29,7 @@ Comandos Git:
 4) - Baixando uma Pasta do Controle de Origem para máquina local
       git clone [link do Github]
 
+5) Após criar/alterar novas entidade no MODEL, clicar no Projeto que contem os MODELs e rodar os seguinte comando no Terminal:
+        dotnet ef database update    // Isto irá criar/atualizar a(s) estrutura(s) da(s) Entidadade(s) no Banco de Dados
+
+
