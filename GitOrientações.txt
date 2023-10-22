@@ -22,10 +22,21 @@ Comandos Git:
       git add .       //  Guarde uma versão numa pasta temporária do controle
       git status      //  Mostra as alterações pendentes a serem gravadas no Github 
       git commit -m "Mensagem explicativa"  // Grava as alterações no Github e Insere um histórico explicativo
-      git branch -M main
+      git branch -M main    // Importane se você tivar trabalhando com Branchs 
       git remote add origin git@github.com:[NomeUsuario]/[SeuRepositorio].git
       git push -u origin main
 
 4) - Baixando uma Pasta do Controle de Origem para máquina local
       git clone [link do Github]
+
+5) Após criar/alterar novas entidade no MODEL, clicar no Projeto que contem os MODELs e rodar os seguinte comando no Terminal 
+  *  (Open in Terminal) = PS -> Power Shell:
+        dotnet ef migrations add [NomeDaTabelaQueGuardaráAsEvoluçõesDaMigration]
+        Ex.: dotnet ef migrations remove | dotnet ef migrations add AddProductDataTableOnDB
+
+      Em seguida executa o camando para atualizar estrutura no banco de Datods:
+        dotnet ef database update    // Isto irá COMMITAR => criar/atualizar a(s) estrutura(s) da(s) Entidadade(s) no Banco de Dados
+
+    Obs: Se os Camdndo não executarem pode ser que o dotnet tolls para ef não esteja devidamento instalado para EF, então rode:
+        dotnet tool install --global dotnet-ef
 
