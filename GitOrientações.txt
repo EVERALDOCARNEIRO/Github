@@ -30,6 +30,10 @@ Comandos Git:
       git clone [link do Github]
 
 5) Após criar/alterar novas entidade no MODEL, clicar no Projeto que contem os MODELs e rodar os seguinte comando no Terminal:
-        dotnet ef database update    // Isto irá criar/atualizar a(s) estrutura(s) da(s) Entidadade(s) no Banco de Dados
+        dotnet ef migrations add [NomeDaTabelaQueGuardaráAsEvoluçõesDaMigration]
+        Ex.: dotnet ef migrations add AddProductDataTableOnDB
+
+      Em seguida executa o camando para atualizar estrutura no banco de Datods:
+        dotnet ef database update    // Isto irá COMMITAR => criar/atualizar a(s) estrutura(s) da(s) Entidadade(s) no Banco de Dados
 
 
