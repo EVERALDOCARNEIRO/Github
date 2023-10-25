@@ -32,11 +32,21 @@ Comandos Git:
 5) Após criar/alterar novas entidade no MODEL, clicar no Projeto que contem os MODELs e rodar os seguinte comando no Terminal 
   *  (Open in Terminal) = PS -> Power Shell:
         dotnet ef migrations add [NomeDaTabelaQueGuardaráAsEvoluçõesDaMigration]
-        Ex.: dotnet ef migrations remove | dotnet ef migrations add AddProductDataTableOnDB
+        Ex.: dotnet ef migrations remove | dotnet ef migrations add AddProductDataTableOnDB  // Cria a MIGRATIONS no Porjeto corrente.
+
+         DotNet ef database update    // Aplica a MIGRATIONS do Porjeto corrente para atualizar o banco de dados
 
       Em seguida executa o camando para atualizar estrutura no banco de Datods:
         dotnet ef database update    // Isto irá COMMITAR => criar/atualizar a(s) estrutura(s) da(s) Entidadade(s) no Banco de Dados
 
     Obs: Se os Camdndo não executarem pode ser que o dotnet tolls para ef não esteja devidamento instalado para EF, então rode:
         dotnet tool install --global dotnet-ef
+
+6) - Instalações Necessárias:
+      Instala a Duende Software: https://duendesoftware.com/
+      Responsável por gerenciar o IdentityServer (Autenticação e via TOKEN), ferramento complementar do JWT (Autenticação via TOKEN)
+
+    
+
+   
 
