@@ -43,8 +43,15 @@ Comandos Git:
         dotnet tool install --global dotnet-ef
 
 6) - Instalações Necessárias:
-      Instala a Duende Software: https://duendesoftware.com/
+      Instala a Framework do Duende Software: https://duendesoftware.com/
       Responsável por gerenciar o IdentityServer (Autenticação e via TOKEN), ferramento complementar do JWT (Autenticação via TOKEN)
+        dotnet add package Duende.IdentityServer --version 6.3.5
+
+      Instala o pacote de templates do DUENDE para IdentityServer:
+        dotnet new -i Duende.IdentityServer.Templates
+
+    Adiciona uporte para autenticação de usuário interativa via OpenID Connect Protocol oara o IdentityServer. 
+        dotnet new isui
 
     
 
